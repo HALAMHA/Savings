@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(240, 240, 240);
+}
+
+.main {
+  background-color: white;
+  margin: 1.5em;
+  padding: 1em;
+  box-shadow: 0 0 10px rgb(194, 194, 194);
+  color: rgb(84, 84, 84);
+}
+
+.intro {
+  text-align: center;
+  margin: 1em;
+}
+
+.form {
+  text-align: center;
+  line-height: 2.5em;
+}
+
+#salary {
+  padding: 0.3em;
+  background-color: rgb(233, 233, 233);
+  border: none;
+  font-size: 17px;
+}
+
+#count {
+  border: none;
+  padding: 0.5em 1em;
+  margin: 1.5em;
+  background-color: rgb(56, 55, 55);
+  color: white;
+}
+
+#count:hover {
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.result {
+  padding: 1em;
+}
+
+.ten,
+.twenty,
+.thirty,
+.forty {
+  text-align: center;
+  line-height: 2em;
+  margin: 1em 0em;
+  font-weight: bold;
+}
+
+.ten {
+  background-color: lightblue;
+}
+
+.twenty {
+  background-color: rgb(175, 235, 175);
+}
+
+.thirty {
+  background-color: rgb(243, 243, 140);
+}
+
+.forty {
+  background-color: rgb(255, 218, 149);
+}
+
+#infoBlue,
+#infoGreen,
+#infoYellow,
+#infoOrange {
+  display: none;
+}
+
+@media (min-width: 450px) {
+  .main {
+    max-width: 400px;
+    margin: 2em auto;
+  }
+}
