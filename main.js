@@ -21,12 +21,11 @@ blueButton.addEventListener('click', showBlueInfo);
 
 function showBlueInfo() {
   let moreText = document.querySelector('#infoBlue');
- 
   if (getComputedStyle(moreText).display === 'none') {
     blueButton.innerText = 'Hide';
     moreText.style.display = 'inline';
     } else {
-    blueButton.innerText = 'Info';
+    blueButton.innerText = 'Read more';
     moreText.style.display = 'none';
   }
 }
@@ -37,12 +36,11 @@ greenButton.addEventListener('click', showGreenInfo);
 
 function showGreenInfo() {
   let moreText = document.querySelector('#infoGreen');
- 
   if (getComputedStyle(moreText).display === 'none') {
     greenButton.innerText = 'Hide';
     moreText.style.display = 'inline';
     } else {
-    greenButton.innerText = 'Info';
+    greenButton.innerText = 'Read more';
     moreText.style.display = 'none';
   }
 }
@@ -54,12 +52,11 @@ yellowButton.addEventListener('click', showYellowInfo);
 
 function showYellowInfo() {
   let moreText = document.querySelector('#infoYellow');
- 
   if (getComputedStyle(moreText).display === 'none') {
     yellowButton.innerText = 'Hide';
     moreText.style.display = 'inline';
     } else {
-    yellowButton.innerText = 'Info';
+    yellowButton.innerText = 'Read more';
     moreText.style.display = 'none';
   }
 }
@@ -70,12 +67,11 @@ orangeButton.addEventListener('click', showOrangeInfo);
 
 function showOrangeInfo() {
   let moreText = document.querySelector('#infoOrange');
- 
   if (getComputedStyle(moreText).display === 'none') {
     orangeButton.innerText = 'Hide';
     moreText.style.display = 'inline';
     } else {
-    orangeButton.innerText = 'Info';
+    orangeButton.innerText = 'Read more';
     moreText.style.display = 'none';
   }
 }
