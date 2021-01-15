@@ -8,6 +8,7 @@ body {
 
 .main {
   background-color: white;
+  margin: 1em;
   padding: 1em;
   box-shadow: 0 0 10px rgb(194, 194, 194);
   color: rgb(84, 84, 84);
@@ -123,6 +124,14 @@ h2 {
 
 #orangeButton {
   background-color: rgb(247, 230, 198);
+}
+
+.source {
+  font-size: 12px;
+  display: block;
+  text-align: center;
+  color: black;
+  margin-top: 2em;
 }
 
 @media (min-width: 450px) {
