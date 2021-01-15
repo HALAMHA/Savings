@@ -15,63 +15,90 @@ function showSavings() {
 }
 
 
-// Action on "Info" button 10%
+// Action on "Read more" button 10%
 const blueButton = document.querySelector('#blueButton');
-blueButton.addEventListener('click', showBlueInfo);
+blueButton.addEventListener('click', () => {
+  showInfo("infoBlue", blueButton);
+});
 
-function showBlueInfo() {
+/*function showBlueInfo() {
   let moreText = document.querySelector('#infoBlue');
+
   if (getComputedStyle(moreText).display === 'none') {
     blueButton.innerText = 'Hide';
     moreText.style.display = 'inline';
-    } else {
+  } else {
     blueButton.innerText = 'Read more';
     moreText.style.display = 'none';
   }
-}
+}*/
 
-// Info 20%
+// Read more 20%
 const greenButton = document.querySelector('#greenButton');
-greenButton.addEventListener('click', showGreenInfo);
-
+greenButton.addEventListener('click', () => {
+  showInfo("infoGreen", greenButton);
+});
+/*
 function showGreenInfo() {
   let moreText = document.querySelector('#infoGreen');
+
   if (getComputedStyle(moreText).display === 'none') {
     greenButton.innerText = 'Hide';
     moreText.style.display = 'inline';
-    } else {
+  } else {
     greenButton.innerText = 'Read more';
     moreText.style.display = 'none';
   }
 }
+*/
 
-
-// Info 30%
+// Read more 30%
 const yellowButton = document.querySelector('#yellowButton');
-yellowButton.addEventListener('click', showYellowInfo);
-
+yellowButton.addEventListener('click', () => {
+  showInfo("infoYellow", yellowButton);
+});
+/*
 function showYellowInfo() {
   let moreText = document.querySelector('#infoYellow');
+
   if (getComputedStyle(moreText).display === 'none') {
     yellowButton.innerText = 'Hide';
     moreText.style.display = 'inline';
-    } else {
+  } else {
     yellowButton.innerText = 'Read more';
     moreText.style.display = 'none';
   }
-}
+}*/
 
-// Info 40%
+
+
+// Read more 40%
 const orangeButton = document.querySelector('#orangeButton');
-orangeButton.addEventListener('click', showOrangeInfo);
-
+orangeButton.addEventListener('click', () => {
+  showInfo("infoOrange", orangeButton);
+});
+/*
 function showOrangeInfo() {
   let moreText = document.querySelector('#infoOrange');
+
   if (getComputedStyle(moreText).display === 'none') {
     orangeButton.innerText = 'Hide';
     moreText.style.display = 'inline';
-    } else {
+  } else {
     orangeButton.innerText = 'Read more';
+    moreText.style.display = 'none';
+  }
+}
+*/
+
+function showInfo(textId, button) {
+  let moreText = document.getElementById(textId);
+
+  if (getComputedStyle(moreText).display === 'none') {
+    button.innerText = 'Hide';
+    moreText.style.display = 'inline';
+  } else {
+    button.innerText = 'Read more';
     moreText.style.display = 'none';
   }
 }
